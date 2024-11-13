@@ -3,8 +3,7 @@ import { skillsData } from "../dataStore.js";
 import { skillsImage } from "../svg/skill-image.js";
 import Marquee from "react-fast-marquee";
 
-function Skills() { 
-  
+function Skills() {
   return (
     <div
       id="skills"
@@ -51,7 +50,6 @@ function Skills() {
           direction="left"
         >
           {skillsData.map((skill, id) => (
-           
             <div
               className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
               key={id}
@@ -72,7 +70,9 @@ function Skills() {
                       className="h-full w-auto rounded-lg"
                     />
                   </div>
-                  <p className="text-white text-sm sm:text-base">{skill}</p>
+                  <p className="text-white text-sm sm:text-base capitalize">
+                    {skill}
+                  </p>
                 </div>
               </div>
             </div>

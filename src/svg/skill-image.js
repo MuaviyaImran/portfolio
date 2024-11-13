@@ -84,13 +84,13 @@ import firebase from "./skills/firebase.svg";
 import flutter from "./skills/flutter.svg";
 import gcp from "./skills/gcp.svg";
 import git from "./skills/git.svg";
-import msoffice from "./skills/microsoftoffice.svg";
+import office from "./skills/microsoftoffice.svg";
 
 const skillIcons = {
   nodejs,
   saas,
   flask,
-  msoffice,
+  office,
   gcp,
   html,
   photoshop,
@@ -181,5 +181,6 @@ const skillIcons = {
 
 export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
+  console.log(skillID);
   return skillIcons[skillID] || null;
 };
