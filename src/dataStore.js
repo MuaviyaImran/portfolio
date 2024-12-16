@@ -164,21 +164,21 @@ export const skillsData = [
 export const projectsData = [
   {
     id: 1,
-    name: "Zolvat",
-    description:
-      "Zolvat LTD stands at the forefront of financial innovation as a dedicated Electronic Money Institution (EMI) and Payment Service Provider (PSP). We have received our license (no. 115.1.3.59) from the Central Bank of Cyprus, marking a significant milestone in our journey to redefine financial management",
-    liveUrl: `https://emi-staging.zolvat.com/`,
-    role: "Frontend Developer",
-    stack: "VueJs, Tailwind, ViteJs, Formkit",
-  },
-  {
-    id: 2,
     name: "PFFT",
     description:
       "AI Comedy Tool: AI Humor Has Arrived | PFFT.AI, An AI tool that generates structured headings from user input. Click on any heading to instantly expand it into a detailed paragraph, helping you create high-quality content effortlessly.",
     liveUrl: `https://pfft.ai/`,
     role: "Full Stack Developer",
     stack: "NextJs, Tailwind",
+  },
+  {
+    id: 2,
+    name: "Zolvat",
+    description:
+      "Zolvat LTD stands at the forefront of financial innovation as a dedicated Electronic Money Institution (EMI) and Payment Service Provider (PSP). We have received our license (no. 115.1.3.59) from the Central Bank of Cyprus, marking a significant milestone in our journey to redefine financial management",
+    liveUrl: `https://emi-staging.zolvat.com/`,
+    role: "Frontend Developer",
+    stack: "VueJs, Tailwind, ViteJs, Formkit",
   },
   {
     id: 3,
@@ -189,9 +189,17 @@ export const projectsData = [
     role: "Frontend Engineer",
     stack: "NextJs, Tailwind",
   },
-
   {
     id: 4,
+    name: "Datumbrain",
+    description:
+      "Datum Brain is a cutting-edge endeavor that specifically caters to the latest technologies. It always focus on quality and commitment which consequently helps us achieve desirable results",
+    liveUrl: `https://datumbrain.com/`,
+    role: "Frontend Engineer",
+    stack: "NextJs, Tailwind",
+  },
+  {
+    id: 5,
     name: "Metaland",
     description:
       "Metaland project will create all the real communication and services in the virtual world, and by joining our world, clients will be able to get all the services in one place easily.",
