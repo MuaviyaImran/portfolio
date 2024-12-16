@@ -1,7 +1,7 @@
 import React from "react";
 import { projectsData } from "../dataStore.js";
 import ProjectCard from "./ProjectCard.jsx";
- 
+
 const Projects = () => {
   return (
     <div id="projects" className="relative my-12 lg:my-24">
@@ -22,13 +22,14 @@ const Projects = () => {
       </div>
 
       <div className="pt-24">
-        <div className="flex flex-col gap-6"
-        data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000" 
-        data-aos-delay="50"
-         >
-          {projectsData.slice(0, 4).map((project, index) => (
+        <div
+          className="flex flex-col gap-6"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+          data-aos-delay="50"
+        >
+          {projectsData.slice(0, 5).map((project, index) => (
             <div
               id={`sticky-card-${index + 1}`}
               key={index}
