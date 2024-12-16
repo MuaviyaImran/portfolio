@@ -101,3 +101,9 @@ You can refer to the YouTube video guide for a detailed walkthrough.
 You can create favicon.ico from below website and replace with old favicon.ico in the public folder
 
 [https://redketchup.io/favicon-generator]
+
+## Contributors
+
+| Name          | Role              |
+| ------------- | ----------------- |
+| Muaviya Imran | Frontend Engineer |
