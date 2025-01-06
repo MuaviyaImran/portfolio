@@ -173,10 +173,10 @@ export const projectsData = [
   },
   {
     id: 2,
-    name: "Zolvat",
+    name: "Electronic Money Institutions",
     description:
-      "Zolvat LTD stands at the forefront of financial innovation as a dedicated Electronic Money Institution (EMI) and Payment Service Provider (PSP). We have received our license (no. 115.1.3.59) from the Central Bank of Cyprus, marking a significant milestone in our journey to redefine financial management",
-    liveUrl: `https://emi-staging.zolvat.com/`,
+      "EMI stands at the forefront of financial innovation as a dedicated Electronic Money Institution (EMI) and Payment Service Provider (PSP). We have received our license (no. 115.1.3.59) from the Central Bank of Cyprus, marking a significant milestone in our journey to redefine financial management",
+    liveUrl: ``,
     role: "Frontend Developer",
     stack: "VueJs, Tailwind, ViteJs, Formkit",
   },
