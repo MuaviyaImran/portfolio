@@ -85,7 +85,7 @@ import flutter from "./skills/flutter.svg";
 import gcp from "./skills/gcp.svg";
 import git from "./skills/git.svg";
 import office from "./skills/microsoftoffice.svg";
-import golang from "./skills/golang.svg";
+import golang from "./skills/go.svg";
 import strapi from "./skills/strapi.png";
 import python from "./skills/python.svg";
 
@@ -126,8 +126,8 @@ const skillIcons = {
   figma,
   flutter,
   ionic,
-  golang,
   strapi,
+  golang,
   // microservices,
   // phoenix,
   // jenkins,
@@ -145,7 +145,6 @@ const skillIcons = {
   // capacitorjs,
   // coffeescript,
   // memsql,
-  // go,
   // java,
   // kotlin,
   // julia,
