@@ -38,6 +38,8 @@ export const personalData = {
     "Netlify",
     "Vercel",
     "Chakra UI",
+    "Ark UI",
+    "Panda",
     "Styled Components",
     "SASS",
   ],
@@ -49,7 +51,7 @@ export const personalData = {
 export const AboutData = {
   name: "Muaviya Imran",
   description:
-    "I have over 1 year of experience in web, mobile app, and custom software development using technologies such as NextJs, ReactJs, VueJs, Tailwind css, Javascript, Flutter, NodeJs,GoLang, and various DBMS. I have worked across industries including real estate, e-commerce,Fintech and more.",
+    "I have over 2+ years of experience in web, mobile app, and custom software development using technologies such as NextJs, ReactJs, VueJs, Tailwind css, Javascript, Flutter, NodeJs, GoLang, and various DBMS. I have worked across industries including real estate, e-commerce,Fintech and many more.",
   profile: profile,
 };
 
@@ -169,7 +171,7 @@ export const projectsData = [
     id: 1,
     name: "PFFT",
     description:
-      "AI Comedy Tool: AI Humor Has Arrived | PFFT.AI, An AI tool that generates structured headings from user input. Click on any heading to instantly expand it into a detailed paragraph, helping you create high-quality content effortlessly.",
+      "AI Comedy Tool: AI Humor Has Arrived | PFFT.AI, An AI tool that generates structured headings from user input. Click on any heading to instantly expand it into a detailed paragraph, helping you create high-quality content effortlessly",
     liveUrl: `https://pfft.ai/`,
     role: "Full Stack Developer",
     stack: "NextJs, Tailwind",
@@ -187,7 +189,7 @@ export const projectsData = [
     id: 3,
     name: "Neuromise",
     description:
-      "A design studio that specializes in helping startups, companies, and agencies enhance their digital products, branding, and graphic design to a world-class standard.",
+      "A design studio that specializes in helping startups, companies, and agencies enhance their digital products, branding, and graphic design to a world-class standard",
     liveUrl: `https://neuromise.com/`,
     role: "Frontend Engineer",
     stack: "NextJs, Tailwind",
@@ -205,10 +207,19 @@ export const projectsData = [
     id: 5,
     name: "Metaland",
     description:
-      "Metaland project will create all the real communication and services in the virtual world, and by joining our world, clients will be able to get all the services in one place easily.",
+      "Metaland project will create all the real communication and services in the virtual world, and by joining our world, clients will be able to get all the services in one place easily",
     liveUrl: `https://metaland.mn/en/about`,
     role: "Full Stack Developer",
     stack: "MongoDB, ExpressJs, ReactJs, NodeJs",
+  },
+  {
+    id: 6,
+    name: "Gett",
+    description:
+      "Gett is a food delivery app that connects users with local restaurants and stores, allowing them to order food and groceries for delivery or pickup in US. The app features a user-friendly interface, real-time tracking, and a wide selection of local businesses",
+    liveUrl: `https://www.gett.co/`,
+    role: "Frontend Developer",
+    stack: "ReactJs, CapacitorJs, Panda, ArkUI",
   },
 ];
 
