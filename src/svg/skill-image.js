@@ -29,7 +29,6 @@
 // import php from "./skills/php.svg";
 // import picsart from "./skills/picsart.svg";
 // import premierepro from "./skills/premierepro.svg";
-// import python from "./skills/python.svg";
 // import pytorch from "./skills/pytorch.svg";
 // import ruby from "./skills/ruby.svg";
 // import selenium from "./skills/selenium.svg";
@@ -43,14 +42,14 @@
 // import wolframalpha from "./skills/wolframalpha.svg";
 // import wordpress from "./skills/wordpress.svg";
 // import laravel from "./skills/laravel.svg";
-// import fastapi from "./skills/fastapi.svg";
-// import restapi from "./skills/api.svg";
 // import datascience from "./skills/datascience.svg";
 // import redis from "./skills/redis.svg";
 // import elixir from "./skills/elixir.svg";
 // import jenkins from "./skills/jenkins.svg";
 // import phoenix from "./skills/phoenix.svg";
-// import microservices from "./skills/microservices.svg";
+import microservices from "./skills/microservices.svg";
+import fastapi from "./skills/fastapi.svg";
+import restapi from "./skills/api.svg";
 import react from "./skills/react.svg";
 import materialui from "./skills/materialui.svg";
 import javascript from "./skills/javascript.svg";
@@ -128,14 +127,14 @@ const skillIcons = {
   ionic,
   golang,
   strapi,
-  // microservices,
+  fastapi,
+  restapi,
+  microservices,
   // phoenix,
   // jenkins,
   // elixir,
   // redis,
   // datascience,
-  // fastapi,
-  // restapi,
   // laravel,
   // "adobe xd": adobeXd,
   // "after effects": afterEffects,
@@ -150,7 +149,6 @@ const skillIcons = {
   // julia,
   // matlab,
   // php,
-  // python,
   // ruby,
   // swift,
   // "adobe audition": adobeaudition,

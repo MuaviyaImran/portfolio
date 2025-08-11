@@ -1,4 +1,3 @@
-import React from "react";
 import { projectsData } from "../dataStore.js";
 import ProjectCard from "./ProjectCard.jsx";
 
@@ -29,7 +28,7 @@ const Projects = () => {
           data-aos-duration="2000"
           data-aos-delay="50"
         >
-          {projectsData.slice(0, 6).map((project, index) => (
+          {projectsData.slice(0, 5).map((project, index) => (
             <div
               id={`sticky-card-${index + 1}`}
               key={index}
