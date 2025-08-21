@@ -53,7 +53,7 @@ function Experience() {
 
           <div>
             <div
-              className="flex flex-col gap-6 overflow-hidden"
+              className="flex flex-col gap-3 md:gap-6 overflow-hidden"
               data-aos="fade-up-left"
               data-aos-duration="2000"
               data-aos-delay="50"
@@ -64,7 +64,7 @@ function Experience() {
                   key={experience.id}
                   identifier={`experience-${experience.id}`}
                 >
-                  <div className="p-3 relative">
+                  <div className="px-1 py-3 md:p-3 relative">
                     <img
                       src={blurSvg}
                       alt="Hero"
