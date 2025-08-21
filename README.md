@@ -102,7 +102,7 @@ You can create favicon.ico from below website and replace with old favicon.ico i
 
 [https://redketchup.io/favicon-generator]
 
-## Contributors
+## Contributor
 
 | Name          | Role                 |
 | ------------- | -------------------- |
