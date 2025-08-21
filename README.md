@@ -69,7 +69,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
 ## EmailJS Setup Guide
 
 Create an EmailJS Account
@@ -98,12 +97,13 @@ You can refer to the YouTube video guide for a detailed walkthrough.
 [https://www.youtube.com/watch?v=Nm_IHH4iOx4&t=190s&ab_channel=techM]
 
 ## favicon.ico guide
+
 You can create favicon.ico from below website and replace with old favicon.ico in the public folder
 
 [https://redketchup.io/favicon-generator]
 
 ## Contributors
 
-| Name          | Role              |
-| ------------- | ----------------- |
-| Muaviya Imran | Frontend Engineer |
+| Name          | Role                 |
+| ------------- | -------------------- |
+| Muaviya Imran | Full Stack Developer |
