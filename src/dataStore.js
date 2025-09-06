@@ -2,7 +2,7 @@ import profile from "./assets/profile.jpeg";
 
 export const personalData = {
   name: "Muaviya Imran",
-  designation: ["Frontend Developer", "Mobile App Developer"],
+  designation: ["Full Stack Developer", "Mobile App Developer"],
   github: "https://github.com/MuaviyaImran",
   linkedIn: "https://www.linkedin.com/in/muaviya-imran-4749a7215/",
   facebook:
@@ -98,8 +98,7 @@ export const experiences = [
     duration: "(Sep 11, 2023 - Present)",
     location: "Lahore, Pakistan",
     responsibilities: [
-      "Backend development NextJs Framework",
-      "Frontend development with ReactJs, VueJs, Tailwind, and Bootstrap",
+      "Full stack development NextJs, Go Framework, Selenium, ReactJs, VueJs and Python ",
       "Performance and optimization of live products",
       "Provide optimal solutions",
     ],
@@ -124,8 +123,8 @@ export const experiences = [
     duration: "(Aug 2021 - Present)",
     location: "Lahore, Pakistan",
     responsibilities: [
-      "Backend development NextJs Framework",
-      "Frontend development with ReactJs, VueJs, Tailwind, and Bootstrap",
+      "Full stack development NextJs Framework, VueJs, Tailwind and bootstrap",
+      "Worked on Flutter mobile applications",
       "Performance and optimization of live products",
       "Provide optimal solutions",
       "Flutter mobile application development",
@@ -245,8 +244,8 @@ export const projectsData = [
     description:
       "Spanish-to-English language learning and translation tool integrating Google Translate and OpenAI for interactive practice.",
     liveUrl: "",
-    role: "Frontend Developer",
-    stack: "React.js, Tailwind CSS, OpenAI API",
+    role: "Full Stack Developer",
+    stack: "React.js, Tailwind CSS, GoLang, OpenAI API",
   },
   // {
   //   id: 4,
