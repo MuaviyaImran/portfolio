@@ -48,6 +48,7 @@ export const personalData = {
     "REST APIs",
     "Authentication & Authorization",
     "Selenium",
+    "Playwright",
     "Cypress Testing",
     "OpenAI API",
     "LangChain",
