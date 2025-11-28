@@ -1,12 +1,10 @@
 import React from "react";
 import { personalData } from "../dataStore.js";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaFacebook } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 import heroImage from "../assets/hero.svg";
 import { TypeAnimation } from "react-type-animation";
-import { RiInstagramFill } from "react-icons/ri";
 
 const HeroSection = () => {
   return (

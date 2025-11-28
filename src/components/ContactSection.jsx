@@ -1,15 +1,13 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { personalData, ContactMe } from "../dataStore.js";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
-import { FaFacebook } from "react-icons/fa";
 import { IoLogoGithub, IoMdCall } from "react-icons/io";
 import { MdAlternateEmail } from "react-icons/md";
 import { MdOutgoingMail } from "react-icons/md";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { RiInstagramFill } from "react-icons/ri";
 
 function ContactSection() {
   const [loading, setLoading] = useState(false);
@@ -68,7 +66,9 @@ function ContactSection() {
             className="mt-6 flex flex-col gap-4"
           >
             <div className="flex flex-col gap-2">
-              <label className="text-base" htmlFor="contact-name">Your Name:</label>
+              <label className="text-base" htmlFor="contact-name">
+                Your Name:
+              </label>
               <input
                 id="contact-name"
                 name="from_name"
@@ -79,7 +79,9 @@ function ContactSection() {
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label className="text-base" htmlFor="contact-email">Your Email:</label>
+              <label className="text-base" htmlFor="contact-email">
+                Your Email:
+              </label>
               <input
                 id="contact-email"
                 name="from_email"
@@ -90,7 +92,9 @@ function ContactSection() {
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label className="text-base" htmlFor="contact-message">Your Message:</label>
+              <label className="text-base" htmlFor="contact-message">
+                Your Message:
+              </label>
               <textarea
                 id="contact-message"
                 maxLength="500"
