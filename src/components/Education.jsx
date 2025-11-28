@@ -15,7 +15,8 @@ function Education() {
     >
       <img
         src={sectionImage}
-        alt="Hero"
+        alt="Section background"
+        loading="lazy"
         className="absolute top-0 -z-10 w-full"
       />
       <div className="flex justify-center -translate-y-[1px]">
@@ -33,9 +34,9 @@ function Education() {
           data-aos-easing="ease-in-out"
         >
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-          <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
+          <h2 className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
             Educations
-          </span>
+          </h2>
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
       </div>
@@ -70,7 +71,8 @@ function Education() {
                   <div className=" px-1 py-3 md:p-3 relative text-white">
                     <img
                       src={blurImage}
-                      alt="Hero"
+                      alt=""
+                      loading="lazy"
                       className="absolute bottom-0 opacity-80 w-full"
                     />
                     <div className="flex justify-center">

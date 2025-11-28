@@ -13,7 +13,7 @@ const HeroSection = () => {
     <section className="relative flex flex-col items-center justify-between py-4 lg:py-12">
       <img
         src={heroImage}
-        alt="Hero"
+        alt="Illustration of Muaviya Imran, full-stack developer"
         width={1572}
         height={795}
         className="absolute -top-[98px] -z-10"
@@ -61,6 +61,7 @@ const HeroSection = () => {
               href={personalData.github}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit Muaviya Imran GitHub profile"
               className="transition-all text-pink-500 hover:text-pink-500 hover:scale-125 duration-300"
             >
               <BsGithub size={30} />
@@ -69,6 +70,7 @@ const HeroSection = () => {
               href={personalData.linkedIn}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit Muaviya Imran LinkedIn profile"
               className="transition-all text-pink-500 hover:text-pink-500 hover:scale-125 duration-300"
             >
               <BsLinkedin size={30} />
@@ -77,6 +79,7 @@ const HeroSection = () => {
               href={personalData.facebook}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit Muaviya Imran Facebook profile"
               className="transition-all text-pink-500 hover:text-pink-500 hover:scale-125 duration-300"
             >
               <FaFacebook size={30} />
@@ -85,6 +88,7 @@ const HeroSection = () => {
               href={personalData.instagram}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit Muaviya Imran Instagram profile"
               className="transition-all text-pink-500 hover:text-pink-500 hover:scale-125 duration-300"
             >
               <RiInstagramFill size={30} />
@@ -104,6 +108,7 @@ const HeroSection = () => {
             <a
               href={require("../MuaviyaImranCV.pdf")}
               download="MuaviyaImranCV.pdf"
+              aria-label="Download Muaviya Imran resume as PDF"
               className="hoverBtn flex items-center gap-1 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
             >
               <span>Get Resume</span>

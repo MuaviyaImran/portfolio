@@ -11,9 +11,9 @@ function AboutSection() {
         data-aos-delay="50"
         data-aos-easing="ease-in-out"
       >
-        <span className="bg-[#1a1443] w-fit text-white rotate-90 p-2 px-5 text-xl rounded-md">
+        <h2 className="bg-[#1a1443] w-fit text-white rotate-90 p-2 px-5 text-xl rounded-md">
           ABOUT ME
-        </span>
+        </h2>
         <span className="h-36 w-[2px] bg-[#1a1443]"></span>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
@@ -43,6 +43,7 @@ function AboutSection() {
             width={280}
             height={280}
             alt={AboutData.name}
+            loading="lazy"
             className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
             data-aos="fade-up"
             data-aos-duration="3000"

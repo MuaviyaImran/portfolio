@@ -26,9 +26,9 @@ function Skills() {
           data-aos-easing="ease-in-out"
         >
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-          <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
+          <h2 className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
             Skills
-          </span>
+          </h2>
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
       </div>
@@ -40,15 +40,23 @@ function Skills() {
         data-aos-delay="50"
         data-aos-easing="ease-in-out"
       >
-        <Marquee
-          gradient={false}
-          speed={80}
-          pauseOnHover={true}
-          pauseOnClick={true}
-          delay={0}
-          play={true}
-          direction="left"
-        >
+        {(() => {
+          const prefersReducedMotion =
+            typeof window !== "undefined" &&
+            window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+          const shouldPlay = !prefersReducedMotion;
+
+          return (
+            <Marquee
+              gradient={false}
+              speed={60}
+              pauseOnHover={true}
+              pauseOnClick={true}
+              delay={0}
+              play={shouldPlay}
+              direction="left"
+            >
           {skillsData.map((skill, id) => (
             <div
               className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
@@ -67,6 +75,7 @@ function Skills() {
                       alt={skill}
                       width={40}
                       height={40}
+                      loading="lazy"
                       className="h-full w-auto rounded-lg"
                     />
                   </div>
@@ -77,7 +86,9 @@ function Skills() {
               </div>
             </div>
           ))}
-        </Marquee>
+            </Marquee>
+          );
+        })()}
       </div>
     </div>
   );

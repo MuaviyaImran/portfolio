@@ -19,6 +19,20 @@ body {
   background-color: #0d1224;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .hoverBtn,
+  .glow-card,
+  .sticky-card {
+    transition: none !important;
+  }
+}
+
 #sticky-card-1 {
   --index: 1;
 }

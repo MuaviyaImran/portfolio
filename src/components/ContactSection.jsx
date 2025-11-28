@@ -48,9 +48,9 @@ function ContactSection() {
         data-aos-delay="50"
         data-aos-easing="ease-in-out"
       >
-        <span className="bg-[#1a1443] w-fit text-white rotate-90 p-2 px-5 text-xl rounded-md">
+        <h2 className="bg-[#1a1443] w-fit text-white rotate-90 p-2 px-5 text-xl rounded-md">
           CONTACT
-        </span>
+        </h2>
         <span className="h-36 w-[2px] bg-[#1a1443]"></span>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-16 items-center">
@@ -68,8 +68,9 @@ function ContactSection() {
             className="mt-6 flex flex-col gap-4"
           >
             <div className="flex flex-col gap-2">
-              <label className="text-base">Your Name:</label>
+              <label className="text-base" htmlFor="contact-name">Your Name:</label>
               <input
+                id="contact-name"
                 name="from_name"
                 type="text"
                 maxLength="100"
@@ -78,8 +79,9 @@ function ContactSection() {
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label className="text-base">Your Email:</label>
+              <label className="text-base" htmlFor="contact-email">Your Email:</label>
               <input
+                id="contact-email"
                 name="from_email"
                 type="email"
                 maxLength="100"
@@ -88,8 +90,9 @@ function ContactSection() {
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label className="text-base">Your Message:</label>
+              <label className="text-base" htmlFor="contact-message">Your Message:</label>
               <textarea
+                id="contact-message"
                 maxLength="500"
                 name="message"
                 required
@@ -151,6 +154,7 @@ function ContactSection() {
               href={personalData.github}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit Muaviya Imran GitHub profile"
             >
               <IoLogoGithub
                 className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
@@ -161,6 +165,7 @@ function ContactSection() {
               href={personalData.linkedIn}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit Muaviya Imran LinkedIn profile"
             >
               <BiLogoLinkedin
                 className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
@@ -171,6 +176,7 @@ function ContactSection() {
               href={personalData.instagram}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit Muaviya Imran Instagram profile"
             >
               <RiInstagramFill
                 className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
@@ -181,6 +187,7 @@ function ContactSection() {
               href={personalData.facebook}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit Muaviya Imran Facebook profile"
             >
               <FaFacebook
                 className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"

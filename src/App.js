@@ -16,8 +16,15 @@ import PreLoader from "./components/PreLoader";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    Aos.init();
+    const prefersReducedMotion =
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    Aos.init({
+      disable: () => prefersReducedMotion,
+    });
   }, []);
 
   useEffect(() => {
@@ -25,9 +32,20 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    setTimeout(() => {
+    const prefersReducedMotion =
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (prefersReducedMotion) {
       setLoading(false);
-    }, 3000);
+      return;
+    }
+
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (

@@ -13,9 +13,9 @@ const Projects = () => {
           data-aos-delay="50"
           data-aos-easing="ease-in-out"
         >
-          <span className="bg-[#1a1443] absolute left-0 w-fit text-white px-5 py-3 text-xl rounded-md">
+          <h2 className="bg-[#1a1443] absolute left-0 w-fit text-white px-5 py-3 text-xl rounded-md">
             PROJECTS
-          </span>
+          </h2>
           <span className="w-full h-[2px] bg-[#1a1443]"></span>
         </div>
       </div>
