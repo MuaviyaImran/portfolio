@@ -75,7 +75,7 @@ const HeroSection = () => {
             >
               <BsLinkedin size={30} />
             </a>
-            <a
+            {/* <a
               href={personalData.facebook}
               target="_blank"
               rel="noopener noreferrer"
@@ -92,7 +92,7 @@ const HeroSection = () => {
               className="transition-all text-pink-500 hover:text-pink-500 hover:scale-125 duration-300"
             >
               <RiInstagramFill size={30} />
-            </a>
+            </a> */}
           </div>
 
           <div className="flex items-center gap-3">

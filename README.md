@@ -1,109 +1,92 @@
-# Getting Started with Create React App
+## Muaviya Imran – Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio website built with React to showcase projects, skills, experience, and contact information for Muaviya Imran.
 
-## Available Scripts
+The app is based on Create React App and styled with TailwindCSS and custom CSS. It also integrates EmailJS for handling contact form submissions.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Responsive UI**
+- **Project showcase** with descriptions and links
+- **Skills & experience** sections
+- **Contact form** powered by EmailJS
+- **Animations** with AOS and Lottie
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: React (Create React App)
+- **Styling**: TailwindCSS, custom CSS
+- **Animations**: AOS, Lottie
+- **Utilities**: Axios, React Icons, React Toastify, React Type Animation, React Fast Marquee
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. Clone the repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone <your-repo-url>
+cd portfolio
+```
 
-### `npm run eject`
+### 2. Install dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3. Environment variables (EmailJS)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Create a `.env` file in the project root (or copy from `.env.sample`) and add your EmailJS credentials:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-## EmailJS Setup Guide
-
-Create an EmailJS Account
-[https://www.emailjs.com]
-
-Visit EmailJS to create a new account.
-Get Your Service ID, Template ID, and Public Key
-
-After setting up your account, note down your Service ID, Template ID, and Public Key. You will need these for the configuration.
-
-Add Credentials to .env File
-
-Open your project's .env file. If you don't have one, create it in the root directory of your project.
-Add your EmailJS credentials to the .env file. Follow the format provided in the .env.example file.
-Example:
-
-makefile
-Copy code
+```bash
 REACT_APP_EmailJsServiceId=your_service_id
 REACT_APP_EmailJsTemplateId=your_template_id
 REACT_APP_EmailJsPublicKey=your_public_key
+```
 
-For More Details
+You can create an EmailJS account here: https://www.emailjs.com
 
-You can refer to the YouTube video guide for a detailed walkthrough.
-[https://www.youtube.com/watch?v=Nm_IHH4iOx4&t=190s&ab_channel=techM]
+For a detailed walkthrough, you can refer to this video:
+https://www.youtube.com/watch?v=Nm_IHH4iOx4&t=190s&ab_channel=techM
 
-## favicon.ico guide
+### 4. Run the app in development
 
-You can create favicon.ico from below website and replace with old favicon.ico in the public folder
+```bash
+npm start
+```
 
-[https://redketchup.io/favicon-generator]
+The app will be available at: http://localhost:3000
+
+---
+
+## Available Scripts
+
+- **`npm start`** – Runs the app in development mode.
+- **`npm test`** – Launches the test runner in interactive watch mode.
+- **`npm run build`** – Builds the app for production to the `build` folder.
+- **`npm run eject`** – Ejects from Create React App (not reversible).
+
+---
+
+## Favicon
+
+You can generate a custom `favicon.ico` from:
+
+https://redketchup.io/favicon-generator
+
+Then replace the existing `favicon.ico` in the `public` folder.
+
+---
 
 ## Contributor
 
-| Name          | Role                 |
-| ------------- | -------------------- |
+| Name          | Role                  |
+| ------------- | --------------------- |
 | Muaviya Imran | Full Stack Developer |
+
