@@ -13,6 +13,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { personalData } from "./dataStore.js";
 import PreLoader from "./components/PreLoader";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -67,6 +68,7 @@ const App = () => {
           <Footer />
         </>
       )}
+      <SpeedInsights />
     </main>
   );
 };
