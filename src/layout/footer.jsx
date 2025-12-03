@@ -1,4 +1,3 @@
-import React from "react";
 import { personalData } from "../dataStore.js";
 
 function Footer() {

@@ -1,10 +1,11 @@
-import React from "react";
-import { personalData } from "../dataStore.js";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { MdDownload } from "react-icons/md";
-import { RiContactsFill } from "react-icons/ri";
-import heroImage from "../assets/hero.svg";
 import { TypeAnimation } from "react-type-animation";
+import { RiContactsFill } from "react-icons/ri";
+import { personalData } from "../dataStore.js";
+import { MdDownload } from "react-icons/md";
+import heroImage from "../assets/hero.svg";
+
+import React from 'react'
 
 const HeroSection = () => {
   return (
