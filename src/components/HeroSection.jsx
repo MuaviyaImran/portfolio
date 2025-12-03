@@ -5,6 +5,8 @@ import { personalData } from "../dataStore.js";
 import { MdDownload } from "react-icons/md";
 import heroImage from "../assets/hero.svg";
 
+import React from 'react'
+
 const HeroSection = () => {
   return (
     <section className="relative flex flex-col items-center justify-between py-4 lg:py-12">

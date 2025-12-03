@@ -3,7 +3,7 @@ import ScrollToTop from "./components/helper/scroll-to-top";
 import ContactSection from "./components/ContactSection";
 import AboutSection from "./components/AboutSection";
 import HeroSection from "./components/HeroSection";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 import Experience from "./components/Experience";
 import PreLoader from "./components/PreLoader";
 import Education from "./components/Education";
