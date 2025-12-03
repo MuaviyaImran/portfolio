@@ -1,11 +1,10 @@
-import React from "react";
-import { experiences } from "../dataStore.js";
-import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "./helper/animation-lottie";
-import GlowCard from "./helper/glow-card";
-import experience from "./lottie/code.json";
+import { BsPersonWorkspace } from "react-icons/bs";
 import sectionSvg from "../assets/section.svg";
+import { experiences } from "../dataStore.js";
 import blurSvg from "../assets/blur-23.svg";
+import experience from "./lottie/code.json";
+import GlowCard from "./helper/glow-card";
 
 function Experience() {
   return (

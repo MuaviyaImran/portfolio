@@ -10,9 +10,7 @@ const AnimationLottie = ({ animationPath, width = "95%" }) => {
     },
   };
 
-  return (
-    <Lottie {...defaultOptions} />
-  );
+  return <Lottie {...defaultOptions} />;
 };
 
 export default AnimationLottie;

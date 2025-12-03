@@ -1,19 +1,20 @@
-import React, { useEffect, useState } from "react";
-import Navbar from "./layout/navbar";
-import HeroSection from "./components/HeroSection";
-import AboutSection from "./components/AboutSection";
-import Experience from "./components/Experience";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Education from "./components/Education";
-import ContactSection from "./components/ContactSection";
-import ScrollToTop from "./components/helper/scroll-to-top";
-import Footer from "./layout/footer";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { personalData } from "./dataStore.js";
-import PreLoader from "./components/PreLoader";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import ScrollToTop from "./components/helper/scroll-to-top";
+import ContactSection from "./components/ContactSection";
+import AboutSection from "./components/AboutSection";
+import HeroSection from "./components/HeroSection";
+import { Analytics } from "@vercel/analytics/next";
+import Experience from "./components/Experience";
+import PreLoader from "./components/PreLoader";
+import Education from "./components/Education";
+import { personalData } from "./dataStore.js";
+import Projects from "./components/Projects";
+import { useEffect, useState } from "react";
+import Skills from "./components/Skills";
+import Navbar from "./layout/navbar";
+import Footer from "./layout/footer";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -69,6 +70,7 @@ const App = () => {
         </>
       )}
       <SpeedInsights />
+      <Analytics />
     </main>
   );
 };

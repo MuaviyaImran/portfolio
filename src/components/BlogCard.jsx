@@ -1,7 +1,6 @@
-import React from 'react';
-import { timeConverter } from './utils/time-converter.js'; 
-import { BsHeartFill } from 'react-icons/bs';
-import { FaCommentAlt } from 'react-icons/fa';
+import { timeConverter } from "./utils/time-converter.js";
+import { FaCommentAlt } from "react-icons/fa";
+import { BsHeartFill } from "react-icons/bs";
 
 function BlogCard({ blog }) {
   return (

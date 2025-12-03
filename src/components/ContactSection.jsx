@@ -1,13 +1,13 @@
-import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 import { personalData, ContactMe } from "../dataStore.js";
-import { BiLogoLinkedin } from "react-icons/bi";
-import { CiLocationOn } from "react-icons/ci";
 import { IoLogoGithub, IoMdCall } from "react-icons/io";
+import { ToastContainer, toast } from "react-toastify";
 import { MdAlternateEmail } from "react-icons/md";
 import { MdOutgoingMail } from "react-icons/md";
-import { ToastContainer, toast } from "react-toastify";
+import { BiLogoLinkedin } from "react-icons/bi";
 import "react-toastify/dist/ReactToastify.css";
+import { CiLocationOn } from "react-icons/ci";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 function ContactSection() {
   const [loading, setLoading] = useState(false);

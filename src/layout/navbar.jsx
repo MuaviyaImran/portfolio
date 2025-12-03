@@ -1,6 +1,6 @@
-import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { personalData } from "../dataStore.js";
+import { useState } from "react";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);

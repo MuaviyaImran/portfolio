@@ -1,11 +1,10 @@
-import React from "react";
-import { educations } from "../dataStore.js";
-import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "./helper/animation-lottie";
-import GlowCard from "./helper/glow-card";
-import lottieFile from "./lottie/study.json";
+import { BsPersonWorkspace } from "react-icons/bs";
 import sectionImage from "../assets/section.svg";
 import blurImage from "../assets/blur-23.svg";
+import lottieFile from "./lottie/study.json";
+import { educations } from "../dataStore.js";
+import GlowCard from "./helper/glow-card";
 
 function Education() {
   return (

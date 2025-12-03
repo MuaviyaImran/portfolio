@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa6";
 
 const SCROLL_THRESHOLD = 50;
@@ -30,7 +30,7 @@ const ScrollToTop = () => {
       }`}
       onClick={onClickBtn}
       aria-label="Scroll to top"
-      style={{padding:'8px'}}
+      style={{ padding: "8px" }}
     >
       <FaArrowUp className="text-white" />
     </button>
