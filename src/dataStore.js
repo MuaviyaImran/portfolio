@@ -81,7 +81,7 @@ export const AboutData = {
 export const experiences = [
   {
     id: 1,
-    title: "Frontend Developer (Part-time)",
+    title: "Frontend Developer",
     company: "Golden Gate Innovations",
     duration: "(Apr 2025 - Present)",
     location: "Remote, US-Based",
@@ -95,7 +95,7 @@ export const experiences = [
     id: 2,
     title: "Associate Software Engineer",
     company: "Datumbrain",
-    duration: "(Sep 11, 2023 - Present)",
+    duration: "(Sep 11, 2023 - Dec 11, 2025)",
     location: "Lahore, Pakistan",
     responsibilities: [
       "Full stack development NextJs, Go Framework, Selenium, ReactJs, VueJs and Python ",
