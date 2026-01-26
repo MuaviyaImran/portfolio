@@ -9,6 +9,15 @@ const Navbar = () => {
     setNav(!nav);
   };
 
+  const handleLinkClick = (e, href) => {
+    e.preventDefault();
+    setNav(false);
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const navItems = [
     { id: 1, text: "About", href: "#about" },
     { id: 2, text: "Experience", href: "#experience" },
@@ -31,6 +40,7 @@ const Navbar = () => {
             <a
               className="whitespace-nowrap cursor-pointer duration-300 hover:text-pink-600 text-sm transition-colors"
               href={item.href}
+              onClick={(e) => handleLinkClick(e, item.href)}
             >
               {item.text}
             </a>
@@ -63,6 +73,7 @@ const Navbar = () => {
             <a
               href={item.href}
               className="p-4 duration-300 hover:text-pink-600 cursor-pointer border-gray-600 text-base transition-colors"
+              onClick={(e) => handleLinkClick(e, item.href)}
             >
               {item.text}
             </a>
