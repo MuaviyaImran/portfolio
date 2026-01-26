@@ -4,6 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --foreground-rgb: rgb(211, 216, 232);
 }
