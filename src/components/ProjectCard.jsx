@@ -1,71 +1,53 @@
-function ProjectCard({ project }) {
-  return (
-    <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full">
-      <div className="flex flex-row">
-        <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
-        <div className="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
-      </div>
-      <div className="px-4 lg:px-8 py-3 lg:py-5 relative">
-        <div className="flex flex-row space-x-1 lg:space-x-2 absolute top-1/2 -translate-y-1/2">
-          <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-red-400"></div>
-          <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-orange-400"></div>
-          <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-green-200"></div>
-        </div>
-        <p className="text-center ml-3 text-[#16f2b3] text-base lg:text-xl">
-          {project.name}
-        </p>
-      </div>
-      <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
-        <code className="font-mono text-xs md:text-sm lg:text-base">
-          <div className="blink">
-            <span className="mr-2 text-pink-500">const</span>
-            <span className="mr-2 text-white">project</span>
-            <span className="mr-2 text-pink-500">=</span>
-            <span className="text-gray-400">{"{"}</span>
-          </div>
-          <div>
-            <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
-            <span className="text-gray-400">{`'`}</span>
-            <span className="text-amber-300">{project.name}</span>
-            <span className="text-gray-400">{`',`}</span>
-          </div>
-          <div>
-            <span className="ml-4 lg:ml-8 mr-2 text-white">liveUrl:</span>
-            <span className="text-gray-400">{`'`}</span>
-            <a
-              href={project.liveUrl}
-              className="text-amber-300 hover:text-gray-400"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Open in Browser
-            </a>
-            <span className="text-gray-400">{`',`}</span>
-          </div>
+import { BsBoxArrowUpRight } from "react-icons/bs";
 
-          <div>
-            <span className="ml-4 lg:ml-8 mr-2 text-white">myRole:</span>
-            <span className="text-gray-400">{`'`}</span>
-            <span className="text-orange-400">{project.role}</span>
-            <span className="text-gray-400">{`',`}</span>
-          </div>
-          <div>
-            <span className="ml-4 lg:ml-8 mr-2 text-white">stack:</span>
-            <span className="text-orange-400">[{project.stack}]</span>
-            <span className="text-gray-400">,</span>
-          </div>
-          <div className="ml-4 lg:ml-8 mr-2">
-            <span className="text-white mr-2">Description:</span>
-            <span className="text-gray-400">{`'`}</span>
-            <span className="text-cyan-400">{project.description}</span>
-            <span className="text-gray-400">{`',`}</span>
-          </div>
-          <div>
-            <span className="text-gray-400">{`};`}</span>
-          </div>
-        </code>
+function ProjectCard({ project }) {
+  const stackItems = project.stack
+    .split(",")
+    .map((item) => item.trim())
+    .filter(Boolean);
+
+  return (
+    <article className="border-[#1b2c68a0] relative flex h-full w-full flex-col rounded-lg border bg-[#0b102a] p-5 transition-all duration-300 hover:border-violet-500/70 hover:bg-[#0d1230] sm:p-6">
+      <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-pink-500 to-violet-600" />
+
+      <div className="mb-4 flex items-start justify-between gap-4">
+        <div>
+          <h3 className="text-lg font-semibold leading-snug text-[#16f2b3]">
+            {project.name}
+          </h3>
+          <p className="mt-1 text-sm font-medium text-orange-300">
+            {project.role}
+          </p>
+        </div>
+
+        {project.liveUrl && (
+          <a
+            href={project.liveUrl}
+            className="mt-1 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-violet-500/40 text-violet-200 transition-colors hover:border-[#16f2b3] hover:text-[#16f2b3]"
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`Open ${project.name}`}
+          >
+            <BsBoxArrowUpRight size={15} />
+          </a>
+        )}
       </div>
-    </div>
+
+      <p className="flex-1 text-sm leading-6 text-gray-300">
+        {project.description}
+      </p>
+
+      <div className="mt-5 flex flex-wrap gap-2">
+        {stackItems.map((item) => (
+          <span
+            key={item}
+            className="rounded-full border border-indigo-500/30 bg-indigo-500/10 px-2.5 py-1 text-xs font-medium text-cyan-200"
+          >
+            {item}
+          </span>
+        ))}
+      </div>
+    </article>
   );
 }
 

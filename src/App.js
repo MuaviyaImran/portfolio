@@ -34,6 +34,14 @@ const App = () => {
   }, []);
 
   useEffect(() => {
+    if (!loading) {
+      requestAnimationFrame(() => {
+        Aos.refreshHard();
+      });
+    }
+  }, [loading]);
+
+  useEffect(() => {
     const prefersReducedMotion =
       typeof window !== "undefined" &&
       window.matchMedia("(prefers-reduced-motion: reduce)").matches;

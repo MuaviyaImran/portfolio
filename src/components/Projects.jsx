@@ -4,12 +4,12 @@ import ProjectCard from "./ProjectCard.jsx";
 const Projects = () => {
   return (
     <div id="projects" className="relative my-12 lg:my-24">
-      <div className="sticky top-10">
+      <div className="sticky top-10 z-10">
         <div className="w-[80px] h-[80px] bg-violet-100 rounded-full absolute -top-3 left-0 translate-x-1/2 filter blur-3xl opacity-30"></div>
         <div
           className="flex items-center justify-start relative"
           data-aos="zoom-in-right"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           data-aos-delay="50"
           data-aos-easing="ease-in-out"
         >
@@ -20,21 +20,20 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="pt-24">
-        <div
-          className="flex flex-col gap-6"
-          data-aos="flip-left"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
-          data-aos-delay="50"
-        >
-          {projectsData.slice(0, 5).map((project, index) => (
+      <div className="pt-20">
+        <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
+          {projectsData.map((project, index) => (
             <div
-              id={`sticky-card-${index + 1}`}
-              key={index}
-              className="sticky-card w-full mx-auto max-w-2xl sticky"
+              key={project.id}
+              className="w-full"
+              data-aos="fade-up"
+              data-aos-duration="900"
+              data-aos-delay={String((index % 2) * 120)}
+              data-aos-offset="80"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-easing="ease-out-cubic"
             >
-              <div className="box-border flex items-center justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)] transition-all duration-[0.5s]">
+              <div className="box-border flex h-full items-stretch justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_28px_0_rgba(130,40,236,0.2)]">
                 <ProjectCard project={project} />
               </div>
             </div>

@@ -43,7 +43,7 @@
 // import wordpress from "./skills/wordpress.svg";
 // import laravel from "./skills/laravel.svg";
 // import datascience from "./skills/datascience.svg";
-// import redis from "./skills/redis.svg";
+import redis from "./skills/redis.svg";
 // import elixir from "./skills/elixir.svg";
 // import jenkins from "./skills/jenkins.svg";
 // import phoenix from "./skills/phoenix.svg";
@@ -130,6 +130,7 @@ const skillIcons = {
   fastapi,
   restapi,
   microservices,
+  redis,
   // phoenix,
   // jenkins,
   // elixir,
@@ -184,6 +185,5 @@ const skillIcons = {
 
 export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
-  console.log(skillID);
   return skillIcons[skillID] || null;
 };
