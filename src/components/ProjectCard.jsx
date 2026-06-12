@@ -29,19 +29,21 @@ function ProjectCard({ project }) {
             <span className="text-amber-300">{project.name}</span>
             <span className="text-gray-400">{`',`}</span>
           </div>
-          <div>
-            <span className="ml-4 lg:ml-8 mr-2 text-white">liveUrl:</span>
-            <span className="text-gray-400">{`'`}</span>
-            <a
-              href={project.liveUrl}
-              className="text-amber-300 hover:text-gray-400"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Open in Browser
-            </a>
-            <span className="text-gray-400">{`',`}</span>
-          </div>
+          {project.liveUrl && (
+            <div>
+              <span className="ml-4 lg:ml-8 mr-2 text-white">liveUrl:</span>
+              <span className="text-gray-400">{`'`}</span>
+              <a
+                href={project.liveUrl}
+                className="text-amber-300 hover:text-gray-400"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Open in Browser
+              </a>
+              <span className="text-gray-400">{`',`}</span>
+            </div>
+          )}
 
           <div>
             <span className="ml-4 lg:ml-8 mr-2 text-white">myRole:</span>

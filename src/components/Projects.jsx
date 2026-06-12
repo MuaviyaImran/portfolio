@@ -28,7 +28,7 @@ const Projects = () => {
           data-aos-duration="2000"
           data-aos-delay="50"
         >
-          {projectsData.slice(0, 5).map((project, index) => (
+          {projectsData.map((project, index) => (
             <div
               id={`sticky-card-${index + 1}`}
               key={index}
