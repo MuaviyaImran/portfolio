@@ -72,7 +72,7 @@ export const experiences = [
   },
   {
     id: 2,
-    title: "Software Engineer",
+    title: "Software Engineer (Frontend)",
     company: "Datum Brain",
     duration: "Sep 2023 - Dec 2025",
     location: "Lahore, Pakistan",
