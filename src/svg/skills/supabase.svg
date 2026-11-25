@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Supabase logo">
+  <defs>
+    <linearGradient id="bolt-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3ecf8e"/>
+      <stop offset="1" stop-color="#087f5b"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" fill="#0f0f0f"/>
+  <!-- Upper-left arm -->
+  <path d="M112.8 56.3
+           C116.1 51.9 121.7 50.6 125.1 54.1
+           C126.5 55.6 127.2 57.6 127.2 60
+           L127.2 149.8
+           L66.4 149.8
+           C57.3 149.8 51.3 141.1 54.6 132.6
+           C55.1 131.3 55.9 130 56.8 128.8
+           Z"
+        fill="#3ecf8e"/>
+  <!-- Lower-right arm -->
+  <path d="M127.2 105.8
+           L189.2 105.8
+           C198.8 105.8 204.1 116.5 198.2 124.1
+           L142.2 198.8
+           C138.7 203.5 133.2 205.4 129.9 201.8
+           C128.1 199.9 127.2 197.4 127.2 194.8
+           Z"
+        fill="url(#bolt-gradient)"/>
+</svg>
