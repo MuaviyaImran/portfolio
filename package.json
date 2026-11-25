@@ -2,17 +2,20 @@
   "name": "muaviya-portfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^13.5.0",
     "@vercel/analytics": "^1.6.1",
     "@vercel/speed-insights": "^1.2.0",
     "aos": "^2.3.4",
-    "axios": "^1.5.0",
+    "axios": "^1.21.1",
     "dotenv": "^16.4.5",
     "lottie-react": "^2.4.0",
-    "@testing-library/react": "^16.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-dotenv": "^0.1.3",
