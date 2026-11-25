@@ -53,7 +53,7 @@ export const personalData = {
 export const AboutData = {
   name: "Muaviya Imran",
   description:
-    "Full-stack software engineer with 2+ years of experience building production web applications, dashboards, and internal business platforms. I work across React.js, Next.js, TypeScript, Tailwind CSS, Go, Node.js, PostgreSQL, REST APIs, and modern state management, with recent projects in CRM, payroll automation, Web3 trading dashboards, geospatial intelligence, AI reporting, and data-driven simulation tools.",
+    "Full-stack software engineer with 3+ years of experience building production web applications, dashboards, and internal business platforms. I work across React.js, Next.js, TypeScript, Tailwind CSS, Go, Node.js, PostgreSQL, REST APIs, and modern state management, with recent projects in CRM, payroll automation, Web3 trading dashboards, geospatial intelligence, AI reporting, and data-driven simulation tools.",
   profile: profile,
 };
 
@@ -142,12 +142,14 @@ export const skillsData = [
   "ViteJs",
   "Docker",
   "Git",
+  "Railway",
+  "Supabase",
 ];
 
 export const projectsData = [
   {
     id: 1,
-    name: "GGI Operations Platform",
+    name: "Operations Platform CRM",
     description:
       "Internal operations platform for employee management, payroll, reimbursements, departments, users, and salary slip workflows with automated PDFs and email delivery.",
     liveUrl: "",
@@ -210,7 +212,7 @@ export const projectsData = [
     description:
       "Financial web platform features for performance, authentication, compliance management, and client-specific API integrations.",
     liveUrl: "",
-    role: "Frontend Developer",
+    role: "Fullstack Developer",
     stack: "Vue.js, Tailwind CSS, FormKit",
   },
   {
@@ -221,6 +223,16 @@ export const projectsData = [
     liveUrl: "https://github.com/BYOJS/storage/pull/6",
     role: "Open Source Contributor",
     stack: "JavaScript, Browser Storage APIs, IndexedDB, Open Source",
+  },
+  {
+    id: 9,
+    name: "Property Intelligence Platform",
+    description:
+      "Commercial real estate intelligence platform with an AI assistant that answers site-selection questions and drives an interactive map, covering foot traffic, demographics, property records, owners, and open-data layers.",
+    liveUrl: "",
+    role: "Full-Stack Developer",
+    stack:
+      "React, TypeScript, Redux, Tailwind CSS, Mapbox GL, Node.js, Express, PostgreSQL, MongoDB, BullMQ, OpenAI, Playwright",
   },
 ];
 

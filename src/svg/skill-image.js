@@ -43,50 +43,52 @@
 // import wordpress from "./skills/wordpress.svg";
 // import laravel from "./skills/laravel.svg";
 // import datascience from "./skills/datascience.svg";
-import redis from "./skills/redis.svg";
 // import elixir from "./skills/elixir.svg";
 // import jenkins from "./skills/jenkins.svg";
 // import phoenix from "./skills/phoenix.svg";
 import microservices from "./skills/microservices.svg";
-import fastapi from "./skills/fastapi.svg";
-import restapi from "./skills/api.svg";
-import react from "./skills/react.svg";
+import illustrator from "./skills/illustrator.svg";
+import office from "./skills/microsoftoffice.svg";
+import typescript from "./skills/typescript.svg";
+import postgresql from "./skills/postgresql.svg";
 import materialui from "./skills/materialui.svg";
 import javascript from "./skills/javascript.svg";
-import html from "./skills/html.svg";
-import illustrator from "./skills/illustrator.svg";
-import ionic from "./skills/ionic.svg";
-import bootstrap from "./skills/bootstrap.svg";
-import c from "./skills/c.svg";
-import photoshop from "./skills/photoshop.svg";
-import flask from "./skills/flask.svg";
-import postgresql from "./skills/postgresql.svg";
-import tailwind from "./skills/tailwind.svg";
-import typescript from "./skills/typescript.svg";
-import angular from "./skills/angular.svg";
-import saas from "./skills/cloud.svg";
-import nodejs from "./skills/node.svg";
-import vitejs from "./skills/vitejs.svg";
-import vue from "./skills/vue.svg";
-import nuxtJS from "./skills/nuxtJS.svg";
-import cplusplus from "./skills/cplusplus.svg";
-import csharp from "./skills/csharp.svg";
-import css from "./skills/css.svg";
-import docker from "./skills/docker.svg";
-import dart from "./skills/dart.svg";
 import vuetifyjs from "./skills/vuetifyjs.svg";
-import mongoDB from "./skills/mongoDB.svg";
-import mysql from "./skills/mysql.svg";
-import nextJS from "./skills/nextJS.svg";
-import figma from "./skills/figma.svg";
+import photoshop from "./skills/photoshop.svg";
+import cplusplus from "./skills/cplusplus.svg";
+import bootstrap from "./skills/bootstrap.svg";
+import tailwind from "./skills/tailwind.svg";
+import supabase from "./skills/supabase.svg";
 import firebase from "./skills/firebase.svg";
+import railway from "./skills/railway.svg";
+import mongoDB from "./skills/mongoDB.svg";
 import flutter from "./skills/flutter.svg";
-import gcp from "./skills/gcp.svg";
-import git from "./skills/git.svg";
-import office from "./skills/microsoftoffice.svg";
-import golang from "./skills/go.svg";
+import fastapi from "./skills/fastapi.svg";
+import angular from "./skills/angular.svg";
+import vitejs from "./skills/vitejs.svg";
 import strapi from "./skills/strapi.png";
 import python from "./skills/python.svg";
+import nuxtJS from "./skills/nuxtJS.svg";
+import nextJS from "./skills/nextJS.svg";
+import docker from "./skills/docker.svg";
+import csharp from "./skills/csharp.svg";
+import redis from "./skills/redis.svg";
+import react from "./skills/react.svg";
+import mysql from "./skills/mysql.svg";
+import ionic from "./skills/ionic.svg";
+import flask from "./skills/flask.svg";
+import figma from "./skills/figma.svg";
+import nodejs from "./skills/node.svg";
+import restapi from "./skills/api.svg";
+import saas from "./skills/cloud.svg";
+import html from "./skills/html.svg";
+import dart from "./skills/dart.svg";
+import golang from "./skills/go.svg";
+import vue from "./skills/vue.svg";
+import git from "./skills/git.svg";
+import gcp from "./skills/gcp.svg";
+import css from "./skills/css.svg";
+import c from "./skills/c.svg";
 
 const skillIcons = {
   nodejs,
@@ -131,6 +133,8 @@ const skillIcons = {
   restapi,
   microservices,
   redis,
+  railway,
+  supabase,
   // phoenix,
   // jenkins,
   // elixir,
